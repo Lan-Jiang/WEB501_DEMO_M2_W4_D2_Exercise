@@ -11,9 +11,9 @@
 
     <div id = "databinding">
         {{title}}<br/>
-        <a href = "hreflink" target = "_blank"> Click Me </a> <br/>
-        <a href = "hreflink" target = "_blank">Click Me </a>  <br/>
-        <a v-bind:href = "hreflink" target = "_blank">Click Me </a>   <br/>
+        <a v-bind:href = "hreflink2" target = "_blank"> Click Me </a> <br/>
+        <a :href = "hreflink" target = "_blank">Click Me </a>  <br/>
+        <a v-bind:href = "hreflink" target = "_blank">Click Me </a>   <br/> <!-- this link will work because it is binded-->
      </div>
      
      <script type = "text/javascript">
@@ -21,7 +21,8 @@
            el: '#databinding',
            data: {
               title : "DATA BINDING",
-              hreflink : "http://www.google.com"
+              hreflink : "http://www.google.com",
+              hreflink2: "http://www.wiki.com"
            }
         });
      </script>

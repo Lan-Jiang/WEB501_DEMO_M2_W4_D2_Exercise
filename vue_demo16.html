@@ -9,7 +9,7 @@
 <body>
 
    <div id = "databinding">
-      <div>VueJS Directive</div>
+      <div v-changestyle="{color:'green'}">VueJS Directive</div>
    </div>
 
    <script>
@@ -19,7 +19,7 @@
             console.log(e1);
             console.log(binding.value.color);
             console.log(vnode);
-            e1.style.color=binding.value.color;
+            e1.style.color=binding.value.color; //tell to use color value
             e1.style.fontSize = "30px";
          }
       });
